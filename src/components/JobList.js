@@ -48,7 +48,8 @@ function JobList() {
             <img src={front} alt="All jobs" className="front" />
             <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
             <h4 className="items-1">
-              Front End Jobs:
+              Front End Jobs
+              {' '}
               {frontEndJobsCount}
             </h4>
           </NavLink>
@@ -56,7 +57,8 @@ function JobList() {
             <img src={javascript} alt="All jobs" className="javascript" />
             <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
             <h4 className="items-2">
-              JavaScript Developer Jobs:
+              JavaScript Developer Jobs
+              {' '}
               {javascriptJobsCount}
             </h4>
           </NavLink>
@@ -64,7 +66,8 @@ function JobList() {
             <img src={fullstack} alt="All jobs" className="fullstack" />
             <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
             <h4 className="items-3">
-              Full Stack Jobs:
+              Full Stack Jobs
+              {' '}
               {fullstackJobsCount}
             </h4>
           </NavLink>
@@ -72,7 +75,8 @@ function JobList() {
             <img src={senior} alt="All jobs" className="senior" />
             <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
             <h4 className="items-4">
-              Senior Full Stack Developer Jobs:
+              Senior Full-Stack Developer Jobs
+              {' '}
               {seniorFullStackJobsCount}
             </h4>
           </NavLink>
