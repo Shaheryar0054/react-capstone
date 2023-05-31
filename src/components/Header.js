@@ -9,8 +9,9 @@ function Header() {
 
   return (
     <div id="header-container">
-      <div>
+      <div className="navigation-arrow">
         <FontAwesomeIcon icon={faChevronLeft} style={{ color: '#ffffff' }} onClick={() => navigate(-1)} />
+        <h5>2023</h5>
       </div>
       <h4 className="mb-0 text-white">Tech Jobs</h4>
       <div>

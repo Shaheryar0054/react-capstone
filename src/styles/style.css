@@ -195,6 +195,13 @@
     column-gap: 5px;
     color: white;
   }
+
+  .navigation-arrow {
+    display: flex;
+    align-items: center;
+    color: white;
+    column-gap: 3px;
+  }
 }
 
 /* Laptop view */
