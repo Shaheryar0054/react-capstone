@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import JobList from './components/JobList';
 import FrontEndJobs from './components/FrontEndJobs';
 import JavaScriptJobs from './components/JavaScriptJobs';
@@ -7,10 +7,11 @@ import FullStackJobs from './components/FullStackJobs';
 import SeniorFullStackJobs from './components/SeniorFullStackJobs';
 import AllJobs from './components/AllJobs';
 import Header from './components/Header';
+import './styles/style.css';
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<JobList />} />
@@ -20,7 +21,7 @@ function App() {
         <Route path="/senior-full-stack-jobs" element={<SeniorFullStackJobs />} />
         <Route path="/all-jobs" element={<AllJobs />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

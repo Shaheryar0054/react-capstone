@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { fetchJobs } from '../features/jobsSlice';
 import person from '../images/person.jpg';
+import front from '../images/front.jpg';
+import javascript from '../images/javascript.jpg';
+import fullstack from '../images/fullstack.jpg';
+import senior from '../images/senior.jpg';
 
 function JobList() {
   const dispatch = useDispatch();
@@ -11,8 +17,7 @@ function JobList() {
 
   useEffect(() => {
     if (jobStatus === 'idle') {
-      dispatch(fetchJobs()).then(() => {
-      });
+      dispatch(fetchJobs());
     }
   }, [jobStatus, dispatch]);
 
@@ -31,7 +36,8 @@ function JobList() {
       <NavLink to="/all-jobs" className="all-jobs" style={{ textDecoration: 'none' }}>
         <img src={person} alt="All jobs" className="all-job-img" />
         <h3 className="no-of-jobs">
-          No of Tech Jobs =
+          No of Tech Jobs
+          {' '}
           {totalTechJobsCount}
         </h3>
       </NavLink>
@@ -39,28 +45,36 @@ function JobList() {
         <h4>Available jobs</h4>
         <div id="job-categories">
           <NavLink to="/front-end-jobs" style={{ textDecoration: 'none' }}>
-            <p className="items-1">
+            <img src={front} alt="All jobs" className="front" />
+            <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
+            <h4 className="items-1">
               Front End Jobs:
               {frontEndJobsCount}
-            </p>
+            </h4>
           </NavLink>
           <NavLink to="/javascript-jobs" style={{ textDecoration: 'none' }}>
-            <p className="items-2">
+            <img src={javascript} alt="All jobs" className="javascript" />
+            <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
+            <h4 className="items-2">
               JavaScript Developer Jobs:
               {javascriptJobsCount}
-            </p>
+            </h4>
           </NavLink>
           <NavLink to="/full-stack-jobs" style={{ textDecoration: 'none' }}>
-            <p className="items-3">
+            <img src={fullstack} alt="All jobs" className="fullstack" />
+            <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
+            <h4 className="items-3">
               Full Stack Jobs:
               {fullstackJobsCount}
-            </p>
+            </h4>
           </NavLink>
           <NavLink to="/senior-full-stack-jobs" style={{ textDecoration: 'none' }}>
-            <p className="items-4">
+            <img src={senior} alt="All jobs" className="senior" />
+            <FontAwesomeIcon icon={faCircleRight} style={{ color: 'rgb(255 255 255)' }} className="arrow-icon" />
+            <h4 className="items-4">
               Senior Full Stack Developer Jobs:
               {seniorFullStackJobsCount}
-            </p>
+            </h4>
           </NavLink>
         </div>
       </div>

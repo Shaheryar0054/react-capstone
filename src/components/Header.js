@@ -8,7 +8,7 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <div className="header-container">
+    <div id="header-container">
       <div>
         <FontAwesomeIcon icon={faChevronLeft} style={{ color: '#ffffff' }} onClick={() => navigate(-1)} />
       </div>
