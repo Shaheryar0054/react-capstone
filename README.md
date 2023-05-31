@@ -61,6 +61,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Project Documantaion and short descriptive Video
+
+- Click on the link for [Short video](https://www.loom.com/share/acc7cbdfc6774300aaa40e38048b8e0b)
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
