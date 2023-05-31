@@ -63,7 +63,7 @@
 
 ### Project Documantaion and short descriptive Video
 
-- Click on the link for [Short video](https://www.loom.com/share/acc7cbdfc6774300aaa40e38048b8e0b)
+- Click on the link for [Short video](https://www.loom.com/share/f0fd0cef28974e2489cc2fcc78b295bd)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
