@@ -202,6 +202,22 @@
     color: white;
     column-gap: 3px;
   }
+
+  .dropdown {
+    position: absolute;
+    background-color: #ec4c8b;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-item {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+  }
 }
 
 /* Laptop view */
@@ -398,4 +414,20 @@ h4 {
 
 .arrow-icon {
   padding-bottom: 9rem;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #ec4c8b;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
 }
