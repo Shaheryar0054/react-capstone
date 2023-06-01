@@ -125,10 +125,7 @@ If you like this project please give me stars rating
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Thanks to the Microverse team for the great curriculum.
-- Thanks to the Code Reviewer(s) for the insightful feedback.
-- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
-- Hat tip to anyone whose code was used.
+- I want to express my deep appreciation to the Microverse full-stack curriculum for their constant inspiration and invaluable guidance during this journey. I am also extremely grateful to https://remotive.com/ for generously granting me access to their exceptional API, which allowed me to bring this incredible project to fruition. Additionally, I would like to recognize Nelson Sakwa at https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs) for providing the fantastic design guidelines that I utilized to create the user interface for this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

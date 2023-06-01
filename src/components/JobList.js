@@ -24,8 +24,8 @@ function JobList() {
       dispatch(fetchJobs());
     }
   }, [jobStatus, dispatch]);
-  // eslint-disable-next-line max-len
-  const filteredJobs = jobs.filter((job) => job.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
+  const filter = jobs.filter((job) => job.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
   const frontEndJobsCount = jobs.filter((job) => job.title.toLowerCase().includes('front end')).length;
   const javascriptJobsCount = jobs.filter((job) => job.title.toLowerCase().includes('javascript')).length;
@@ -44,7 +44,7 @@ function JobList() {
           {totalTechJobsCount}
         </h3>
       </NavLink>
-      <Filter searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredJobs={filteredJobs} />
+      <Filter searchTerm={searchTerm} setSearchTerm={setSearchTerm} filter={filter} />
       <div id="available-jobs">
         <h4>Available jobs</h4>
         <div id="job-categories">

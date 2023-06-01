@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import '../styles/style.css';
 
-const Filter = ({ searchTerm, setSearchTerm, filteredJobs }) => {
+const Filter = ({ searchTerm, setSearchTerm, filter }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleInputChange = (event) => {
@@ -22,7 +22,7 @@ const Filter = ({ searchTerm, setSearchTerm, filteredJobs }) => {
       />
       {showDropdown && searchTerm && (
         <div className="dropdown">
-          {filteredJobs.map((job) => (
+          {filter.map((job) => (
             <div key={job.id} className="dropdown-item">
               <h5>{job.title}</h5>
               <p>{job.salary || 'Salary not provided'}</p>
@@ -38,7 +38,7 @@ const Filter = ({ searchTerm, setSearchTerm, filteredJobs }) => {
 Filter.propTypes = {
   searchTerm: PropTypes.string.isRequired,
   setSearchTerm: PropTypes.func.isRequired,
-  filteredJobs: PropTypes.arrayOf(PropTypes.shape({
+  filter: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   })).isRequired,
