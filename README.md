@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-### React Capstone Project
+# React Capstone Project
 
 # 📗 Table of Contents
 
